@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📚 Book Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Book List</h1>
+    <button class="btn" onclick="toggleAddForm()">➕ Add Book</button>
+    <ul id="bookList" class="card-list"></ul>
+
+    <div id="addForm" class="card hidden">
+      <h3>Add New Book</h3>
+      <input type="text" id="title" placeholder="Title">
+      <input type="text" id="author" placeholder="Author">
+      <textarea id="details" placeholder="Enter book details..."></textarea>
+      <button class="btn" onclick="addBook()">Submit</button>
+    </div>
+
+    <p><a href="history.html" class="link">📜 View Deleted History</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
